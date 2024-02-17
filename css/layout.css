@@ -1,0 +1,331 @@
+/* **********************************************************
+ * default style that take care of the default layout 
+ * and typography.
+ * ********************************************************** */
+
+
+
+/* **********************************************************
+ * let's get started and do a default reset
+ * ********************************************************** */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+svg,
+video {
+    width:100%;
+    height:1080px;
+    object-fit: contain;
+    /* display: block;
+    max-width: 100%;
+    border-radius: 0.5rem; */
+}
+
+
+
+/* **********************************************************
+ * now let's take care of our main layout and content
+ *
+ * 1. header and main-navigation
+ * 2. weekly 
+ * 3. footer
+ * 4. main layout
+ * 
+ * ********************************************************** */
+
+/* **********************************************************
+ * Main typography
+ * ********************************************************** */
+
+ h1 {
+    font-weight: 800;
+    font-size: var(--font-size-xl);
+    line-height: 1.2em;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: var(--font-size-s);
+    text-decoration: underline ;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: var(--font-size-s);
+    font-style: italic;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: var(--font-size-s);
+}
+
+h5 {
+    font-size: var(--font-size-m);
+    font-weight: 800;
+}
+
+h6 {
+    font-weight: 500;
+    text-decoration-color: var(--color-0); 
+    font-size: var(--font-size-xs);
+    margin-bottom: var(--spacing-xs);
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    transition: color, text-decoration-color 0.3s;
+    font-size: var(--font-size-s);
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-size: var(--font-size-s);
+    font-weight: 500;
+}
+
+
+/* **********************************************************
+ * Paragraph styling
+ * ********************************************************** */
+
+
+p:not(:last-child) {
+    margin-bottom: var(--spacing-s);
+}
+
+.p__size-l {
+    font-size: var(--font-size-l);
+}
+
+.p__size-m {
+    font-size: var(--font-size-m);
+}
+
+.p__size-s {
+    font-size: var(--font-size-s);
+}
+
+.p__size-xs {
+    font-size: var(--font-size-xs);
+}
+
+.p__width-l {
+    width: 100%;
+}
+
+.p__width-m {
+    width: 60%;
+    min-width: 20rem;
+}
+
+.p__width-s {
+    width: 40%;
+    min-width: 15rem;
+}
+
+.p__width-xs {
+    width: 20%;
+    min-width: 10rem;
+}
+
+.p__width-xxs {
+    width: 10%;
+    min-width: 5rem;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.centre-align {
+    text-align:center;
+}
+
+
+/* 1. header and main-navigation */
+
+header {
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+/* 3. footer */
+
+footer {
+    min-height: 8rem;
+    text-align: center;
+    padding-top: var(--spacing-m);
+}
+
+/* 4. main layout */
+
+.row {
+    align-items: start;
+}
+
+
+.column_1 {
+    flex: 1;
+}
+
+.column_2 {
+    flex: 2;
+}
+
+.column_3 {
+    flex: 3;
+}
+
+.column_4 {
+    flex: 4;
+}
+
+.column_5 {
+    flex: 5;
+}
+
+.column_6 {
+    flex: 6;
+}
+
+.column_7 {
+    flex: 7;
+}
+
+.column_8 {
+    flex: 8;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+
+
+/* **********************************************************
+ * special features           
+ * 1. lightbox
+ * ********************************************************** */
+
+.sticky {
+    position: sticky;
+    top: var(--spacing-m);
+}
+
+.video__container {
+    margin: 0px;
+  }
+  
+
+/* 1. lightbox
+ * click on an image (must implement class="zoom") to go full size 
+ * from: https://code-boxx.com/image-zoom-css-javascript
+ */
+
+#lightbox {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity ease 0.3s;
+}
+
+#lightbox.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#lightbox img {
+    width:auto;
+    height: 90%;
+    object-fit: contain;
+}
+
+.zoom {
+    cursor: pointer;
+    
+}
+
+/* ********************************************************** */
+/* debug, when enabled, useful to see the layout-boxes for    */
+/* sections and divs.                                         */
+/* ********************************************************** */
+
+section {
+    border: 1px solid green;
+}
+
+div, ul, li {
+    border: 1px solid red;
+}
+
+ul, li {
+    border: 1px solid blue;
+}
+
+section,
+div, ul, li {
+    border: 0;
+}
+
+.outline {
+    border: 1px dotted black;
+}
+
+
+* {box-sizing:border-box}
+
+#rcorners1 {
+  border-radius: 25px;
+}
+
+
+/* new stuffs */
+.flex-container {
+    display: flex;
+}
+
+.right-container {
+    display: flex;
+    justify-content: flex-end;
+}
