@@ -103,7 +103,7 @@ img {
   display: flex;
   height: 90vh; 
   background-size: cover;
-  background-image: url('/assets/images/headshot.png');
+  background-image: url('/assets/images/headshot-4.png');
   padding: 10px;
   margin: 5vh;
   border-radius: 15px;
@@ -116,4 +116,31 @@ img {
   height:fit-content;
 }
 
-  
+.flex-container {
+  display: flex;
+  justify-content:flex-start;
+}
+
+.right-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.semi-transparent-button { 
+  display: block; 
+  box-sizing:border-box; 
+  margin: 0 auto; 
+  padding: 15px; 
+  width:fit-content; 
+  height:fit-content;
+  background: #fff;
+
+  /* fallback color for old browsers */
+  background: rgba(255, 255, 255, 0.3); 
+  border-radius: 4rem; 
+  color: #fff; 
+  border: 0.8px solid #fff;
+  text-align: center; 
+  text-decoration: none;
+  transition: all 0.3s ease-out; 
+}

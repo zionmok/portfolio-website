@@ -18,6 +18,7 @@
     --spacing-m: 4rem;
     --spacing-l: 6rem;
     --spacing-xl: 12rem;
+    --spacing-xxl: 20rem;
     /* color */
     --color-0: rgb(28, 28, 28); 
     --color-1: rgb(230, 230, 230);
@@ -56,6 +57,10 @@
 
 .margin__top-xl {
     margin-top: var(--spacing-xl);
+}
+
+.margin__top-xxl {
+    margin-top: var(--spacing-xxl);
 }
 
 .margin__bottom-s {

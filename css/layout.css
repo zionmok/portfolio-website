@@ -61,30 +61,35 @@ video {
 
  h1 {
     font-weight: 800;
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-xxl);
     line-height: 1.2em;
+    color: var(--color-1);
 }
 
 h2 {
-    font-weight: 500;
-    font-size: var(--font-size-s);
-    text-decoration: underline ;
+    font-weight: 800;
+    font-size: var(--font-size-xl);
+    line-height: 1.2em;
+    color: var(--color-1);
 }
 
 h3 {
     font-weight: 500;
     font-size: var(--font-size-s);
     font-style: italic;
+    color: var(--color-1);
 }
 
 h4 {
     font-weight: 700;
     font-size: var(--font-size-s);
+    color: var(--color-1);
 }
 
 h5 {
     font-size: var(--font-size-m);
     font-weight: 800;
+    color: var(--color-1);
 }
 
 h6 {
@@ -93,12 +98,14 @@ h6 {
     font-size: var(--font-size-xs);
     margin-bottom: var(--spacing-xs);
     font-style: italic;
+    color: var(--color-1);
 }
 
 a {
     text-decoration: none;
     transition: color, text-decoration-color 0.3s;
     font-size: var(--font-size-s);
+    color: var(--color-1);
 }
 
 ul {
@@ -108,6 +115,7 @@ ul {
 p {
     font-size: var(--font-size-s);
     font-weight: 500;
+    color: var(--color-1);
 }
 
 
@@ -199,30 +207,6 @@ footer {
 
 .column_2 {
     flex: 2;
-}
-
-.column_3 {
-    flex: 3;
-}
-
-.column_4 {
-    flex: 4;
-}
-
-.column_5 {
-    flex: 5;
-}
-
-.column_6 {
-    flex: 6;
-}
-
-.column_7 {
-    flex: 7;
-}
-
-.column_8 {
-    flex: 8;
 }
 
 .flex-column {
@@ -317,15 +301,4 @@ div, ul, li {
 
 #rcorners1 {
   border-radius: 25px;
-}
-
-
-/* new stuffs */
-.flex-container {
-    display: flex;
-}
-
-.right-container {
-    display: flex;
-    justify-content: flex-end;
 }
