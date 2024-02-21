@@ -169,7 +169,8 @@ p:not(:last-child) {
 }
 
 .right-align {
-    text-align: right;
+    /* text-align: right; */
+    justify-items: flex-end;
 }
 
 .centre-align {

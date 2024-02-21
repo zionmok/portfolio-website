@@ -147,6 +147,11 @@
     margin-bottom: var(--spacing-s);
 }
 
+.margin__y-xs {
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
+}
+
 
 
 .margin__x-xl {
