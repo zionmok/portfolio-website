@@ -183,9 +183,19 @@ p:not(:last-child) {
 header {
     top: 0;
     position: fixed;
-    z-index: 100;
+    z-index: 99;
     width: 100%;
 }
+
+#navbar {
+    overflow: hidden;
+    padding: var(--spacing-m); /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
+  }
 
 /* 3. footer */
 
