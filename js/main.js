@@ -38,16 +38,32 @@
     window.scroll({top: 0, left: 0, behavior: 'smooth'});
   }
 
-
-  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+// navbar
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "1px 60px";
-    document.getElementById("logo").style.fontSize = "25px";
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("navbar").style.padding = "8px 0px";
   } else {
-    document.getElementById("navbar").style.padding = "30px 60px";
-    document.getElementById("logo").style.fontSize = "35px";
+    document.getElementById("navbar").style.padding = "40px 50px";
   }
 }
+
+//lightbox zoom
+let all = document.getElementsByClassName("zoom"),
+lightbox = document.getElementById("lightbox");
+
+if (all.length>0) { for (let i of all) {
+i.onclick = () => {
+let clone = i.cloneNode();
+clone.className = "";
+lightbox.innerHTML = "";
+lightbox.appendChild(clone);
+lightbox.className = "show";
+};
+}}
+
+lightbox.onclick = () => {
+lightbox.className = "";
+};

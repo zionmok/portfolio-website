@@ -152,8 +152,6 @@
     margin-bottom: var(--spacing-xs);
 }
 
-
-
 .margin__x-xl {
     margin-left: var(--spacing-xl);
     margin-right: var(--spacing-xl);
@@ -396,30 +394,6 @@
 
 .color__fg-4 {
     color: var(--color-4);
-}
-
-.color__fg-5 {
-    color: var(--color-5);
-}
-
-.color__fg-6 {
-    color: var(--color-6);
-}
-
-.color__fg-7 {
-    color: var(--color-7);
-}
-
-.color__fg-8 {
-    color: var(--color-8);
-}
-
-.color__fg-9 {
-    color: var(--color-9);
-}
-
-.color__fg-10 {
-    color: var(--color-10);
 }
 
 
