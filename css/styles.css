@@ -1,162 +1,167 @@
 /* **********************************************************
- * add custom styles after imports below
- * ********************************************************** */
+* add custom styles after imports below
+* ********************************************************** */
 
- @import "default.css";
- @import "layout.css";
- @import "queries.css";
- 
- 
- /* **********************************************************
-  * to import a font, use the @import option, you can find
-  * lots of font options at fonts.google.com for example.
-  * ********************************************************** */
- 
- @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
- html {
-     font-family: 'Montserrat', sans-serif;
- }
- 
- 
- /* **********************************************************
-  * Customizing
-  *
-  * changes to default settings like colors, typography,
-  * spacing can be de in default.css
-  *
-  * other custom settings, start below
-  *
-  * ********************************************************** */
- 
- * {
-     font-size: 12px;
-     font-kerning: 5px;
-     line-height: 140%;
-     font-weight: 500;
- }
- 
- body {
-     background-color: var(--color-0);
- }
- 
- p > a {
-     color: inherit;
-     font:inherit;
-     text-decoration:underline;
-     text-underline-offset: 3px;
- }
- 
- a {
-     color: inherit;
- }
- 
- a2 {
-     text-decoration: underline;
- }
- 
- a:hover {
-   color: var(--color-2);
-   font-style: italic;
- 
- }
- 
- .arrow{
-   border: solid var(--color-1) !important;
-   border-width: 0 1px 1px 0 !important;
- 
- }
- 
- .arrow-prev {
-   left: 20px;
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%) rotate(135deg);
- 
- }
- .arrow-next {
-   right: 20px;
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%) rotate(-45deg);
- }
- 
- .no-radius {
-   border-radius: 0 !important;
- }
- 
- 
- 
- *,
- *::after,
- *::before {
-   box-sizing: border-box;
- }
- 
- img {
-   display:block;
-   max-width: fit-content;
-   height: auto;
- }
- 
- .top-container {
-   display: flex;
-   height: 90vh; 
-   background-size: cover;
-   background-image: url('/assets/images/headshot-4.png');
-   padding: 10px;
-   margin: 5vh;
-   border-radius: 15px;
- }
- 
- .navbar-container {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   height:fit-content;
- }
- 
- .flex-container {
-   display: flex;
-   justify-content:flex-start;
- }
- 
- .right-container {
-   display: flex;
-   flex-direction: column;
-   justify-content:flex-end;
-   text-align: right;
- }
- .box-container {
-   display: flex;
-   flex-wrap: wrap;
-   align-content: flex-start;
-   justify-content: flex-start;
- 
-   column-gap: 12px;
- 
- }
- 
- .box-container > * {
-   flex: 1 1 fit;
- }
- 
- .semi-transparent-box { 
-   display:flex; 
-   justify-content: center;
-   box-sizing:border-box; 
-   margin: 0; 
-   padding: 15px;
-   min-width: 80px;
-   height:fit-content;
-   background: #fff;
- 
-   /* fallback color for old browsers */
-   background: rgba(255, 255, 255, 0.3); 
-   border-radius: 3rem; 
-   color: #fff; 
-   border: 0.8px solid #fff;
-   text-align: center; 
-   text-decoration: none;
-   transition: all 0.3s ease-out; 
- }
+@import "default.css";
+@import "layout.css";
+@import "queries.css";
+
+
+/* **********************************************************
+* to import a font, use the @import option, you can find
+* lots of font options at fonts.google.com for example.
+* ********************************************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* **********************************************************
+* Customizing
+*
+* changes to default settings like colors, typography,
+* spacing can be de in default.css
+*
+* other custom settings, start below
+*
+* ********************************************************** */
+
+* {
+    font-size: 12px;
+    font-kerning: 5px;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+body {
+    background-color: var(--color-0);
+}
+
+p > a {
+    color: inherit;
+    font:inherit;
+    text-decoration:underline;
+    text-underline-offset: 3px;
+}
+
+a {
+  color: inherit;
+    
+}
+
+a2 {
+    text-decoration: underline;
+}
+
+a:hover {
+  /* color: var(--color-2); */
+  font-style: italic;
+  background: linear-gradient(0.25turn, #7644ff, #ff874b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.arrow{
+  border: solid var(--color-1) !important;
+  border-width: 0 1px 1px 0 !important;
+
+}
+
+.arrow-prev {
+  left: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+
+}
+.arrow-next {
+  right: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.no-radius {
+  border-radius: 0 !important;
+}
+
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  display:block;
+  max-width: fit-content;
+  height: auto;
+}
+
+.top-container {
+  display: flex;
+  height: 90vh; 
+  background-size: cover;
+  background-image: url('/assets/images/headshot-4.png');
+  padding: 10px;
+  margin: 5vh;
+  border-radius: 15px;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height:fit-content;
+}
+
+.flex-container {
+  display: flex;
+  justify-content:flex-start;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  text-align: right;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: flex-start;
+
+  column-gap: 12px;
+}
+
+
+.box-container > * {
+  flex: 1 1 fit;
+}
+
+.semi-transparent-box { 
+  display:flex; 
+  justify-content: center;
+  box-sizing:border-box; 
+  margin: 0; 
+  padding: 15px;
+  min-width: 80px;
+  height:fit-content;
+  background: #fff;
+
+  /* fallback color for old browsers */
+  background: rgba(255, 255, 255, 0.3); 
+  border-radius: 3rem; 
+  color: #fff; 
+  border: 0.8px solid #fff;
+  text-align: center; 
+  text-decoration: none;
+  transition: all 0.3s ease-out; 
+}

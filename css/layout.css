@@ -223,16 +223,10 @@ footer {
  * 1. lightbox
  * ********************************************************** */
 
-/* .sticky {
+.sticky {
     position: sticky;
-    top: var(--spacing-m);
-} */
-
-div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
+    top: var(--spacing-xl);
+}
 
 .video__container {
     margin: 0px;
