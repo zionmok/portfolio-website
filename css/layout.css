@@ -66,10 +66,11 @@ video {
 }
 
 h2 {
-    font-weight: 800;
+    font-weight: 500;
     font-size: var(--font-size-xl);
-    line-height: 1.2em;
     color: var(--color-1);
+    letter-spacing: -1px;
+    /* font-style: italic; */
 }
 
 h3 {
@@ -86,9 +87,9 @@ h4 {
 }
 
 h5 {
-    font-size: var(--font-size-m);
-    font-weight: 800;
-    color: var(--color-1);
+    font-size: var(--font-size-s);
+    font-weight: 600;
+    color: var(--color-2);
 }
 
 h6 {
@@ -105,7 +106,7 @@ a {
     transition: color, 
     text-decoration-color 0.6s;
     font-size: var(--font-size-s);
-    color: var(--color-1);
+    color: var(--color-2);
 }
 
 ul {
@@ -117,6 +118,28 @@ p {
     font-weight: 500;
     color: var(--color-1);
 }
+
+.specialfont {
+    font-size: 1.2em;
+    color: inherit;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.bluetext {
+    font-size: inherit;
+    color: var(--color-2);
+    font-weight: inherit;
+}
+
+.underlinetext {
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: underline;
+}
+
 
 
 /* **********************************************************
@@ -184,7 +207,8 @@ header {
     top: 0;
     position: fixed;
     z-index: 99;
-    width: 100%;
+    background-color: rgba(0, 10, 40, 0);
+    box-shadow: none;
 }
 
 /* 3. footer */
@@ -275,13 +299,31 @@ footer {
 
 #navbar {
     overflow: hidden;
-    padding: var(--spacing-m); /* Large padding which will shrink on scroll (using JS) */
-    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-    position: fixed; /* Sticky/fixed navbar */
+    padding: var(--spacing-m);
+    transition: 0.4s;
+    position: fixed;
     width: 100%;
-    top: 0; /* At the top */
+    top: 0;
     z-index: 99;
-  }
+    top: 0;
+    background: linear-gradient(0.5turn, var(--color-0),transparent);
+    /* opacity: 80%; */
+    /* backdrop-filter: blur(5px); */
+}
+
+#navbar-smaller {
+    overflow: hidden;
+    padding: var(--spacing-s);
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    top: 0;
+    background: linear-gradient(0.5turn, var(--color-0),transparent);
+    /* opacity: 80%; */
+    /* backdrop-filter: blur(5px); */
+}
 
   #top-border-radius {
     border-top: 15px;
@@ -316,6 +358,12 @@ div, ul, li {
 
 * {box-sizing:border-box}
 
-.rounded-image {
-    border-radius: 15px;
+.top-rounded-image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.bottom-rounded-image {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
