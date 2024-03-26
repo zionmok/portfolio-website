@@ -461,3 +461,31 @@
 .font__color-0 {
     text-decoration: #ec5766;
 }
+
+
+
+
+/* ********************************************************** 
+mobile 
+********************************************************** */
+/* @media (max-width: 900px) {
+    .padding__xl {
+        padding: var(--spacing-xxl);
+    }
+
+    .padding__l {
+        padding: var(--spacing-xl);
+    }
+
+    .padding__m {
+        padding: var(--spacing-l);
+    }
+
+    .padding__s {
+        padding: var(--spacing-m);
+    }
+
+    .padding__xs {
+        padding: var(--spacing-s);
+    }
+  } */

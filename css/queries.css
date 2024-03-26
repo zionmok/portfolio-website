@@ -12,28 +12,43 @@
 
     :root {
         --font-size-title: 1.0rem;
-        --spacing-xs: 0.5rem;
-        --spacing-s: 0.75rem;
-        --spacing-m: 1.5rem;
-        --spacing-l: 4rem;
-        --spacing-xl: 8rem;
+        --spacing-xs: 1.2rem;
+        --spacing-s: 1.1rem;
+        --spacing-m: 2.5rem;
+        --spacing-l: 3rem;
+        --spacing-xl: 5rem;
+        --spacing-xxl: 20rem;
     }
 
     .row {
         flex-direction: row;
     }
 
+    .flex-container {
+        flex-direction: column;
+        }
+
+    .top-container {
+        margin: 4vh;
+    }
+
     .sticky {
         position: relative;
         top: auto;
-        
+        flex-direction: column;
     }
     
-    .column,
+    .column, 
     .row>ul>li {
         display: flex;
         flex: auto;
         width:100%;
+    }
+
+    #navbar {
+        padding-left: var(--spacing-l);
+        padding-right: var(--spacing-l);
+        padding-top: var(--spacing-xl);
     }
 
 
@@ -73,5 +88,78 @@
 
     .mobile-hide {
         display: none;
+    }
+
+
+/* **********************************************************
+ * media (text)
+ * ********************************************************** */
+    h1 {
+        font-weight: 800;
+        font-size: var(--font-size-xl);
+        line-height: 1.2em;
+        /* color: var(--color-1); */
+    }
+    
+    h2 {
+        font-weight: 500;
+        font-size: var(--font-size-l);
+        /* color: var(--color-1); */
+        letter-spacing: -1px;
+        /* font-style: italic; */
+    }
+    
+    h3 {
+        font-weight: 500;
+        font-size: var(--font-size-xs);
+        font-style: italic;
+        /* color: var(--color-1); */
+    }
+    
+    h4 {
+        font-weight: 700;
+        font-size: var(--font-size-xs);
+        /* color: var(--color-1); */
+    }
+    
+    h5 {
+        font-size: var(--font-size-xs);
+        font-weight: 600;
+        /* color: var(--color-2); */
+    }
+    
+    h6 {
+        font-weight: 500;
+        /* text-decoration-color: var(--color-0);  */
+        font-size: var(--font-size-xs);
+        margin-bottom: var(--spacing-xs);
+        font-style: italic;
+    }
+    
+    a {
+        text-decoration: none;
+        transition: color, 
+        text-decoration-color 0.6s;
+        font-size: var(--font-size-xs);
+        /* color: var(--color-2); */
+    }
+
+    p {
+        font-size: var(--font-size-xs);
+        font-weight: 500;
+        /* color: var(--color-1); */
+    }
+    
+    ol {
+        font-size: var(--font-size-xs);
+        font-weight: 500;
+    }
+    
+    .specialfont {
+        font-size: 1.2em;
+        color: inherit;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
     }
 }

@@ -46,7 +46,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("navbar").style.padding = "8px 0px";
   } else {
-    document.getElementById("navbar").style.padding = "40px 50px";
+    document.getElementById("navbar").style = null;
   }
 }
 

@@ -149,7 +149,7 @@ img.logo {
 .right-container {
   display: flex;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content:right;
   text-align: right;
 }
 
@@ -193,7 +193,9 @@ img.logo {
   box-sizing:border-box; 
   padding: 10px;
   height:fit-content;
-  min-width: 120px;
+  width: fit-content;
+  /* min-width: 120px;
+  max-width: ; */
   background: #fff;
 
   /* fallback color for old browsers */
@@ -204,4 +206,25 @@ img.logo {
   text-align: center; 
   text-decoration: none;
   transition: all 0.3s ease-out; 
+}
+
+.navbar-container > div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.text-color2 {
+  color: var(--color-2);
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: var(--spacing-m);
+  margin-right: var(--spacing-m);
+  border-style: inset;
+  border-width: 0.8px;
+  border-color: var(--color-2);
+  opacity: 70%;
 }

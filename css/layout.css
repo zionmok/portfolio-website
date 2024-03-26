@@ -36,7 +36,6 @@ picture,
 svg,
 video {
     width:100%;
-    height:1080px;
     object-fit: contain;
     display: block;
     max-width: 100%;
@@ -62,13 +61,13 @@ video {
     font-weight: 800;
     font-size: var(--font-size-xxl);
     line-height: 1.2em;
-    color: var(--color-1);
+    /* color: var(--color-1); */
 }
 
 h2 {
     font-weight: 500;
     font-size: var(--font-size-xl);
-    color: var(--color-1);
+    /* color: var(--color-1); */
     letter-spacing: -1px;
     /* font-style: italic; */
 }
@@ -77,28 +76,28 @@ h3 {
     font-weight: 500;
     font-size: var(--font-size-s);
     font-style: italic;
-    color: var(--color-1);
+    /* color: var(--color-1); */
 }
 
 h4 {
     font-weight: 700;
     font-size: var(--font-size-s);
-    color: var(--color-1);
+    /* color: var(--color-1); */
 }
 
 h5 {
     font-size: var(--font-size-s);
     font-weight: 600;
-    color: var(--color-2);
+    /* color: var(--color-2); */
 }
 
 h6 {
     font-weight: 500;
-    text-decoration-color: var(--color-0); 
+    /* text-decoration-color: var(--color-0);  */
     font-size: var(--font-size-xs);
     margin-bottom: var(--spacing-xs);
     font-style: italic;
-    color: var(--color-1);
+    /* color: var(--color-1); */
 }
 
 a {
@@ -106,17 +105,21 @@ a {
     transition: color, 
     text-decoration-color 0.6s;
     font-size: var(--font-size-s);
-    color: var(--color-2);
+    /* color: var(--color-2); */
 }
 
 ul {
     list-style-type: none;
 }
 
+ol {
+    margin-left: 14px;
+  }
+
 p {
     font-size: var(--font-size-s);
     font-weight: 500;
-    color: var(--color-1);
+    /* color: var(--color-1); */
 }
 
 .specialfont {
@@ -127,11 +130,11 @@ p {
     font-style: italic;
 }
 
-.bluetext {
+/* .bluetext {
     font-size: inherit;
     color: var(--color-2);
     font-weight: inherit;
-}
+} */
 
 .underlinetext {
     font-size: inherit;
@@ -215,7 +218,7 @@ header {
 
 footer {
     min-height: 8rem;
-    text-align: center;
+    /* text-align: center; */
     padding-top: var(--spacing-m);
 }
 
@@ -249,7 +252,7 @@ footer {
 
 .sticky {
     position: sticky;
-    top: var(--spacing-xl);
+    top: var(--spacing-l);
 }
 
 .video__container {
@@ -367,3 +370,73 @@ div, ul, li {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
+/* ********************************************************** 
+mobile 
+********************************************************** */
+@media (max-width: 900px) {
+    /* h1 {
+        font-weight: 800;
+        font-size: var(--font-size-xl);
+        line-height: 1.2em;
+        color: var(--color-1);
+    }
+    
+    h2 {
+        font-weight: 500;
+        font-size: var(--font-size-l);
+        color: var(--color-1);
+        letter-spacing: -1px;
+        /* font-style: italic; 
+    }
+    
+    /* h3 {
+        font-weight: 500;
+        font-size: var(--font-size-xs);
+        font-style: italic;
+        color: var(--color-1);
+    }
+    
+    h4 {
+        font-weight: 700;
+        font-size: var(--font-size-xs);
+        color: var(--color-1);
+    }
+    
+    h5 {
+        font-size: var(--font-size-xs);
+        font-weight: 600;
+        color: var(--color-2);
+    }
+    
+    h6 {
+        font-weight: 500;
+        text-decoration-color: var(--color-0); 
+        font-size: var(--font-size-xs);
+        margin-bottom: var(--spacing-xs);
+        font-style: italic;
+        color: var(--color-1);
+    }
+    
+    a {
+        text-decoration: none;
+        transition: color, 
+        text-decoration-color 0.6s;
+        font-size: var(--font-size-xs);
+        color: var(--color-2);
+    }
+
+    p {
+        font-size: var(--font-size-xs);
+        font-weight: 500;
+        color: var(--color-1);
+    }
+    
+    .specialfont {
+        font-size: 1.2em;
+        color: inherit;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: italic;
+    } */ 
+  }
