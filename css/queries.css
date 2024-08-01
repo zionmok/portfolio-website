@@ -91,6 +91,7 @@
     }
 
 
+
 /* **********************************************************
  * media (text)
  * ********************************************************** */
@@ -98,13 +99,13 @@
         font-weight: 800;
         font-size: var(--font-size-xl);
         line-height: 1.2em;
-        /* color: var(--color-1); */
+        color: var(--color-1);
     }
     
     h2 {
         font-weight: 500;
         font-size: var(--font-size-l);
-        /* color: var(--color-1); */
+        color: var(--color-1);
         letter-spacing: -1px;
         /* font-style: italic; */
     }
@@ -113,19 +114,19 @@
         font-weight: 500;
         font-size: var(--font-size-xs);
         font-style: italic;
-        /* color: var(--color-1); */
+        color: var(--color-1);
     }
     
     h4 {
         font-weight: 700;
         font-size: var(--font-size-xs);
-        /* color: var(--color-1); */
+        color: var(--color-1);
     }
     
     h5 {
         font-size: var(--font-size-xs);
         font-weight: 600;
-        /* color: var(--color-2); */
+        color: var(--color-2);
     }
     
     h6 {
@@ -141,13 +142,13 @@
         transition: color, 
         text-decoration-color 0.6s;
         font-size: var(--font-size-xs);
-        /* color: var(--color-2); */
+        color: var(--color-2);
     }
 
     p {
         font-size: var(--font-size-xs);
         font-weight: 500;
-        /* color: var(--color-1); */
+        color: var(--color-1);
     }
     
     ol {
