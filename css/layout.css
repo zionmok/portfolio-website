@@ -110,10 +110,12 @@ a {
 
 ul {
     list-style-type: none;
+    color: var(--color-1);
 }
 
 ol {
     margin-left: 14px;
+    color: var(--color-1);
   }
 
 p {
