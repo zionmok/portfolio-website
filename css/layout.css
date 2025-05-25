@@ -74,14 +74,15 @@ h2 {
 
 h3 {
     font-weight: 500;
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-l);
     font-style: italic;
     color: var(--color-1);
+    line-height: 1.1em;
 }
 
 h4 {
-    font-weight: 700;
-    font-size: var(--font-size-s);
+    font-weight: 500;
+    font-size: var(--font-size-m);
     color: var(--color-1);
 }
 
@@ -97,7 +98,7 @@ h6 {
     font-size: var(--font-size-xs);
     margin-bottom: var(--spacing-xs);
     font-style: italic;
-    color: var(--color-1);
+    /* color: var(--color-3); */
 }
 
 a {
@@ -364,13 +365,13 @@ div, ul, li {
 * {box-sizing:border-box}
 
 .top-rounded-image {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 .bottom-rounded-image {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
 /* ********************************************************** 
